@@ -21,6 +21,7 @@ This script will allow users to more easily playtest the revised Artificer & Ebe
 
 **XUA24A Content Source:**
 - https://media.dndbeyond.com/compendium-images/ua/the-artificer/AzQEA72K8EMf9HmU/UA2024-Artificer.pdf
+
 **XUA25EU Content Source:**
 - https://media.dndbeyond.com/compendium-images/ua/eberron-updates/Lhg25Ggx5iY3rETH/UA2025-CartographerArtificer.pdf
 
