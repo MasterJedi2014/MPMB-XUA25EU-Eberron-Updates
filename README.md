@@ -12,12 +12,14 @@ This file has been compiled by MasterJedi2014, though the bones of the script ar
 This script will allow users to more easily playtest the revised Artificer & Eberron content. It also includes options to re-enable some aspects of the 2019/2020 Artificer that might be needed for an existing character to function.
 
 **Script Patch Notes:**
-- **2025-02-01:**
+- **2025-03-01:**
   - Initial upload of script (V2).
+- **2025-03-16:**
+  - V2 superseded by V7. All of the Dragonmark Feats have been added aside from the Epic Boon *Boon of Siberys*.
 
 **Known Bugs:**
-- V2: +2 Armor, Shield, Wand of the War Mage, Weapon, & Wraps of Unarmed Power don't appear in their correct menus.
-- V2: The level 10 "Replicate Magic Item" options are being addd to the level 6 options immediately upon the character attaining level 6.
+- V7: +2 Armor, Shield, Wand of the War Mage, Weapon, & Wraps of Unarmed Power don't appear in their correct menus.
+- V7: The level 10 "Replicate Magic Item" options are being addd to the level 6 options immediately upon the character attaining level 6.
 
 **XUA24A Content Source:**
 - https://media.dndbeyond.com/compendium-images/ua/the-artificer/AzQEA72K8EMf9HmU/UA2024-Artificer.pdf
