@@ -16,10 +16,12 @@ This script will allow users to more easily playtest the revised Artificer & Ebe
   - Initial upload of script (V2).
 - **2025-03-16:**
   - V2 superseded by V7. All of the Dragonmark Feats have been added aside from the Epic Boon *Boon of Siberys*.
+- **2025-03-30:**
+  - V7 superseded by V8. All of the Greater Dragonmark Feats have had custom `description` attributes added for each ASI choice. The Epic Boon *Boon of Siberys* has been added with coding advice from Joost/MPMB.
 
 **Known Bugs:**
-- V7: +2 Armor, Shield, Wand of the War Mage, Weapon, & Wraps of Unarmed Power don't appear in their correct menus.
-- V7: The level 10 "Replicate Magic Item" options are being addd to the level 6 options immediately upon the character attaining level 6.
+- V8: +2 Armor, Shield, Wand of the War Mage, Weapon, & Wraps of Unarmed Power don't appear in their correct menus.
+- V8: The level 10 "Replicate Magic Item" options are being addd to the level 6 options immediately upon the character attaining level 6.
 
 **XUA24A Content Source:**
 - https://media.dndbeyond.com/compendium-images/ua/the-artificer/AzQEA72K8EMf9HmU/UA2024-Artificer.pdf
