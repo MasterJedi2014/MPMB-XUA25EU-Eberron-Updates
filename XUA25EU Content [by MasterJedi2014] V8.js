@@ -2939,6 +2939,7 @@ FeatsList["boon of siberys"] = {
 	"You gain the following benefits",
 	"Ability Score Improvement. Increase one ability score of your choice by 1, to a Maximum of 30.",
 	"Aberrant Magic. Choose a spell of any level from the Sorcerer spell list or a spell from the Siberys Dragonmarks table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Short or Long Rest. You can also cast this spell using any spell slots you have. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you gain this feat)." + toUni("d8\tSiberys Dragonmarks") + "\n  1\tDetection: True Seeing\n  2\tFinding: Teleport\n  3\tHandling: Animal Shapes\n  4\tHealing: Regenerate\n  5\tHospitality: Heroe's Feast\n  6\tMaking: Demiplane\n  7\tPassage: Plane Shift\n  8\tScribing: Symbol\n  9\tSentinel: Mind Blank\n  10\tShadow: Project Image\n  11\tStorm: Control Weather\n  12\tWarding: Maze",
+  ]),
   description : "An ability score of my choice is increased by 1, to a max of 30. I always have the either 1 spell from the Sorcerer spell list or a spell from the Siberys Dragonmarks table (see book) prepared, and can cast it once without a spell slot per Long Rest. I can also cast it with any spell slots I have. Intelligence, Wisdom, or Charisma is my spellcasting ability for this spell (chosen when I select this feat).",
   spellcastingBonus : [{
 	name : "Boon of Siberys",
