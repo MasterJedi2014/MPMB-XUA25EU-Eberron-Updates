@@ -20,6 +20,7 @@ This script will allow users to more easily playtest the revised Artificer & Ebe
   - V7 superseded by V8. All of the Greater Dragonmark Feats have had custom `description` attributes added for each ASI choice. The Epic Boon *Boon of Siberys* has been added with coding advice from Joost/MPMB.
 
 **Known Bugs:**
+- V8: Homunculus Servants are not displaying their correct Attack & Damage Modifiers for their Force Strike attacks.
 - V8: +2 Armor, Shield, Wand of the War Mage, Weapon, & Wraps of Unarmed Power don't appear in their correct menus.
 - V8: The level 10 "Replicate Magic Item" options are being addd to the level 6 options immediately upon the character attaining level 6.
 
