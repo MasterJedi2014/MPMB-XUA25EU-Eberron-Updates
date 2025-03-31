@@ -3,7 +3,7 @@
 	Effect:		This script adds all of the content from the Unearthed Arcana 2025: Eberron Updates article.
 				This file has been made by MasterJedi2014, borrowing a lot of code from MorePurpleMoreBetter (Joost), Shroo, ThePokésimmer, TrackAtNite, and those who have contributed to the sheet's existing material.
 	Code by:	MasterJedi2014, using MorePurpleMoreBetter's code as reference; Shroo; ThePokésimmer; TrackAtNite
-	Date:		2025-03-30 (sheet v13.2.3)
+	Date:		2025-03-31 (sheet v13.2.3)
 	Notes:		This file will start by shunting the old Artificer and its subclasses into a "Legacy" class using code primarily developed by Shroo.
 				It will thereafter define the new UA Artificer, along with options to customize some class features to include certain aspects of the old Artificer class features, followed by the magic items as well as Feats relating to Dragonmarks.
 */
@@ -1502,7 +1502,7 @@ CreatureList["homunculus servant XUA25EU lvl 2"] = {
 	damage : [1, 6, "force"],
 	range : "30 ft",
 	description : "",
-	modifiers : [2, ""],
+	modifiers : ["", 2],
 	abilitytodamage : false,
 	useSpellMod : "artificer"
   }],
@@ -1570,7 +1570,7 @@ CreatureList["homunculus servant XUA25EU lvl 3"] = {
 	damage : [1, 6, "force"],
 	range : "30 ft",
 	description : "",
-	modifiers : [3, ""],
+	modifiers : ["", 3],
 	abilitytodamage : false,
 	useSpellMod : "artificer"
   }],
@@ -1638,7 +1638,7 @@ CreatureList["homunculus servant XUA25EU lvl 4"] = {
 	damage : [1, 6, "force"],
 	range : "30 ft",
 	description : "",
-	modifiers : [4, ""],
+	modifiers : ["", 4],
 	abilitytodamage : false,
 	useSpellMod : "artificer"
   }],
@@ -1706,7 +1706,7 @@ CreatureList["homunculus servant XUA25EU lvl 5"] = {
 	damage : [1, 6, "force"],
 	range : "30 ft",
 	description : "",
-	modifiers : [5, ""],
+	modifiers : ["", 5],
 	abilitytodamage : false,
 	useSpellMod : "artificer"
   }],
@@ -1774,7 +1774,7 @@ CreatureList["homunculus servant XUA25EU lvl 6"] = {
 	damage : [1, 6, "force"],
 	range : "30 ft",
 	description : "",
-	modifiers : [6, "Prof"],
+	modifiers : ["", 6],
 	abilitytodamage : false,
 	useSpellMod : "artificer"
   }],
@@ -1842,7 +1842,7 @@ CreatureList["homunculus servant XUA25EU lvl 7"] = {
 	damage : [1, 6, "force"],
 	range : "30 ft",
 	description : "",
-	modifiers : [7, ""],
+	modifiers : ["", 7],
 	abilitytodamage : false,
 	useSpellMod : "artificer"
   }],
@@ -1910,7 +1910,7 @@ CreatureList["homunculus servant XUA25EU lvl 8"] = {
 	damage : [1, 6, "force"],
 	range : "30 ft",
 	description : "",
-	modifiers : [8, ""],
+	modifiers : ["", 8],
 	abilitytodamage : false,
 	useSpellMod : "artificer"
   }],
@@ -1978,7 +1978,7 @@ CreatureList["homunculus servant XUA25EU lvl 9"] = {
 	damage : [1, 6, "force"],
 	range : "30 ft",
 	description : "",
-	modifiers : [9, ""],
+	modifiers : ["", 9],
 	abilitytodamage : false,
 	useSpellMod : "artificer"
   }],
