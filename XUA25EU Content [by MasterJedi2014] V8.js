@@ -3,7 +3,7 @@
 	Effect:		This script adds all of the content from the Unearthed Arcana 2025: Eberron Updates article.
 				This file has been made by MasterJedi2014, borrowing a lot of code from MorePurpleMoreBetter (Joost), Shroo, ThePokésimmer, TrackAtNite, and those who have contributed to the sheet's existing material.
 	Code by:	MasterJedi2014, using MorePurpleMoreBetter's code as reference; Shroo; ThePokésimmer; TrackAtNite
-	Date:		2025-03-31 (sheet v13.2.3)
+	Date:		2025-04-03 (sheet v13.2.3)
 	Notes:		This file will start by shunting the old Artificer and its subclasses into a "Legacy" class using code primarily developed by Shroo.
 				It will thereafter define the new UA Artificer, along with options to customize some class features to include certain aspects of the old Artificer class features, followed by the magic items as well as Feats relating to Dragonmarks.
 */
@@ -2946,7 +2946,7 @@ FeatsList["boon of siberys"] = {
 	'class' : 'sorcerer',
 	level : [0, 9],
 	extraspells : ["true seeing", "teleport", "animal shapes", "regenerate", "heroes' feast", "demiplane", "plane shift", "symbol", "mind blank", "project image", "control weather", "maze"],
-	firstCol : 'oncesr'
+	firstCol : 'oncesr',
 	spellcastingAbility : [4, 5, 6],
   }],
   choices: ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"],
