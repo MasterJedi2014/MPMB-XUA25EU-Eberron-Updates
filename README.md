@@ -20,6 +20,8 @@ This script will allow users to more easily playtest the revised Artificer & Ebe
   - V7 superseded by V8. All of the Greater Dragonmark Feats have had custom `description` attributes added for each ASI choice. The Epic Boon *Boon of Siberys* has been added with coding advice from Joost/MPMB.
 - **2025-03-31:**
   - V8 minor update to fix the "Force Strike" attacks within the "Homunculus Servant" `CreatureList` objects.
+- **2025-04-03:**
+  - V8 minor update to correct an error casued by a missing comma.
 
 **Known Bugs:**
 - ~~V8: Homunculus Servants are not displaying their correct Attack & Damage Modifiers for their Force Strike attacks.~~
