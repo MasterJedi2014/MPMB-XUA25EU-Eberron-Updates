@@ -3,7 +3,7 @@
 	Effect:		This script adds all of the content from the Unearthed Arcana 2025: Eberron Updates article.
 				This file has been made by MasterJedi2014, borrowing a lot of code from MorePurpleMoreBetter (Joost), Shroo, ThePokésimmer, TrackAtNite, and those who have contributed to the sheet's existing material.
 	Code by:	MasterJedi2014, using MorePurpleMoreBetter's code as reference; Shroo; ThePokésimmer; TrackAtNite
-	Date:		2025-04-03 (sheet v13.2.3)
+	Date:		2025-04-04 (sheet v13.2.3)
 	Notes:		This file will start by shunting the old Artificer and its subclasses into a "Legacy" class using code primarily developed by Shroo.
 				It will thereafter define the new UA Artificer, along with options to customize some class features to include certain aspects of the old Artificer class features, followed by the magic items as well as Feats relating to Dragonmarks.
 */
@@ -209,13 +209,13 @@ legacyClassRefactor("artificer", {
 		description : "\n   The automation will not add M\u0192 to each artificer spell on the generated spell sheets"
 	  },
     },
-    "magical tinkering": {
-	  name : "Magical Tinkering",
+    "tinker's magic": {
+	  name : "Tinker's Magic",
 	  source : [["XUA25EU", 3]],
 	  minlevel : 1,
 	  description : desc([
 		"As a Magic action, I use Tinker's Tools to create one item per 2024 PHB in an unoccupied space within 5ft.",
-		"I can only make one of the following, which will last for one hour:",
+		"I can only make one of the following, which will last until I finish a Long Rest:",
 		" \u2022 Ball Bearings \u2022 Basket \u2022 Bedroll \u2022 Bell \u2022 Blanket \u2022 Block \u0026 Tackle \u2022 Bucket \u2022 Caltrops \u2022 Candle",
 		" \u2022 Crowbar \u2022 Flask \u2022 Jug \u2022 Lamp \u2022 Net \u2022 Oil \u2022 Paper \u2022 Parchment \u2022 Pole \u2022 Pouch \u2022 Rope \u2022 Sack",
 		" \u2022 Shovel \u2022 String \u2022 Tinderbox \u2022 Torch \u2022 Vial",
@@ -224,17 +224,23 @@ legacyClassRefactor("artificer", {
 	  usagescalc : "event.value = Math.max(1, What('Int Mod'));",
 	  recovery : "long rest",
 	  action : [["action", " (add/remove)"]],
+	  spellcastingBonus: [{
+		name : "Tinker's Magic: Mending",
+		spells : ["mending"],
+		selection : ["mending"],
+		times: 1,
+	  }],
 	  "infuse item" : {
-		name : "Infuse Item",
+		name : "Replicate Magic Item",
 		extraname : "Artificer 2",
 		source : [["XUA25EU", 2]],
 		description : desc([
-		  "When I finish a Long Rest, I can create 1 or 2 different magic items from arcane plans using Tinker's Tools",
-		  "I can attune to it immediately; If I replicate too many items, the oldest item vanishes",
-		  "The infusion lasts until my death + my 1d4 days, but ends if I unlearn the arcane plans",
-		  "Infused containers, like a Bag of Holding, spread their contents harmlessly in \u0026 around its space when it vanishes",
-		  "Whenever I gain an Artificer level, I can replace an arcane plan I know with another",
-		  "I can use a replicated Wand or Weapon as a Spellcasting Focus",
+		  "When I finish a Long Rest, I can create 1 or 2 different magic items from arcane plans using",
+		  "Tinker's Tools. I can attune to it immediately; If I replicate too many items, the oldest item",
+		  "vanishes. The infusion lasts until I unlearn it or my death + my 1d4 days. Infused containers, like",
+		  "a Bag of Holding, spread their contents harmlessly in \u0026 around its space when it vanishes.",
+		  "Whenever I gain an Artificer level, I can replace an arcane plan I know with another.",
+		  "I can use a replicated Wand or Weapon as a Spellcasting Focus.",
 		]),
 		additional : levels.map(function (n) {
 		  return n < 2 ? "" : (n < 6 ? 4 : n < 10 ? 5 : n < 14 ? 6 : n < 18 ? 7 : 8) + " plans known; max " + (n < 6 ? 2 : n < 10 ? 3 : n < 14 ? 4 : n < 18 ? 5 : 6) + " replicated items";
@@ -291,7 +297,7 @@ legacyClassRefactor("artificer", {
 		" \u2022 Drain Magic Item. Once per Long Rest as a Bonus Action, I can cause one of my replicated magic items to vanish, converting the energy into a spell slot. The slot is level 1 if the item is Common or level 2 if the item is Uncommon or Rare. Any spell slot I create with this feature vanishes after a Long Rest.",
 		" \u2022 Transmute Magic Item. Once per Long Rest as a Magic Action, I can touch one of my replicated magic items that is within 5 ft of myself \u0026 transform it into another magic item for which I know the arcane plans to.",
 	  ]),
-	  action : [["bonus action", "Charge Magic Item"], ["bonus action", "Drain Magic Item"], ["action", "Transmute Magic Item"]],
+	  action : [["bonus action", "Charge/Drain Magic Item"], ["action", "Transmute Magic Item"]],
 	},
 	"flash of genius" : {
 	  name : "Flash of Genius",
@@ -965,12 +971,12 @@ AddSubClass("artificer", "cartographer", {
 });
 
 // Add options to include aspects from 2019/2020 Artificer for those that need them
-AddFeatureChoice(ClassList.artificer.features["magical tinkering"], true, "Magical Tinkering: 2019/2020 Functions Added", {
-	name : "Magical Tinkering: 2019/2020 Functions Added",
+AddFeatureChoice(ClassList.artificer.features["tinker's magic"], true, "Tinker's Magic: 2019/2020 Functions Added", {
+	name : "Tinker's Magic: 2019/2020 Functions Added",
 	extraname : "Artificer 1",
 	source : [["MJ:HB", 0], ["E:RLW", 55], ["T", 9]],
 	description : desc([
-		"As a Magic action, I can alternatively use my Magical Tinkering to give 1 property to a nonmagical Tiny object:",
+		"As a Magic action, I can alternatively use my Tinker's Magic to give 1 property to a nonmagical Tiny object:",
 		" \u2022 Emit light (5-ft radius bright light, equal dim), an odor, or a nonverbal sound",
 		" \u2022 Static visual effect on one surface, or emit a 6-second recorded message when tapped",
 		"If I instill a property in more objects than I can have active, the oldest loses its property",
@@ -978,7 +984,7 @@ AddFeatureChoice(ClassList.artificer.features["magical tinkering"], true, "Magic
 		"  items I can temporarily produce via the alternate Magical Tinkering rules.",
 	]),
 	prereqeval : function (v) { return classes.known.artificer.level >= 1 ? true : "skip"; }
-}, "1st-level Artificer Magical Tinkering choice");
+}, "1st-level Artificer Tinker's Magic choice");
 AddFeatureChoice(ClassList.artificer.features["magic item savant"], true, "Magic Item Savant: 2019/2020 Functions Added", {
 	name : "Magic Item Savant: 2019/2020 Functions Added",
 	extraname : "Artificer 14",
@@ -3019,14 +3025,14 @@ RunFunctionAtEnd(function () {
 	    source : [["XUA25EU", 8]],
 	    minlevel : 3,
 	    description : desc([
-		  "When I finish a rest, I can use smith's tools to change the model of my arcane armor",
+		  "When I finish a rest, I can use Smith's Tools to change the model of my Arcane Armor",
 		  'Select a model using the "Choose Feature" button; See "Notes" page for features of each'
 	    ]),
 	    additional : "also see notes page",
 	    toNotesPage : [{
 		  name : "Arcane Armor Model Features",
 		  note : desc([
-		    "I can customize my arcane armor to the Dreadnaught, Guardian, or Infiltrator model whenever I finish a Short or Long Rest, provided I have Smith's Tools in hand.",
+		    "I can customize my Arcane Armor to the Dreadnaught, Guardian, or Infiltrator model whenever I finish a Short or Long Rest, provided I have Smith's Tools in hand.",
 		    "Each model includes a special weapon. When I attack with that weapon, I can use my Intelligence modifier, instead of Strength or Dexterity, for the attack and damage rolls."
 		  ])
 	    }, {
@@ -3199,19 +3205,21 @@ RunFunctionAtEnd(function () {
   });
   var itsFea = ClassSubList["artificer-armorer"].features["subclassfeature3.2"];
   var dreadnaughtTxt = desc([
-	"One gauntlet manifests an iron ball on a chain that can push/pull a target, a Simple Melee weapon, Armor Flail",
-	"As a Bonus Action, I can increase my reach by 5 ft and become Large if I am currently smaller than Large"
+	"One gauntlet manifests an iron ball on a chain that can push/pull a target at least 1 size",
+	"smaller than me up to 10 ft. This Armor Flail is a Simple Melee weapon with Reach. Int mod",
+	"times per Long Rest, as a Bonus Action, I can enlarge my armor for 1 minute. My reach increases",
+	"by 5 ft and I become Large if I am currently smaller than Large /u0026 there is enough room."
   ])
   var guardianTxt = desc([
-	"Both fists are Thunder Gauntlets, Simple Melee weapons that distract those hit by it",
-	"As a Bonus Action while Bloodied, I can activate a defensive shield to gain my Artificer level in Temp HP"
+	"Both fists are Thunder Gauntlets, Simple Melee weapons that distract those hit by it.",
+	"As a Bonus Action while Bloodied, I can activate a defensive shield to gain my Artificer level in Temp HP."
   ])
   var guardianAdditional = levels.map(function (n) {
 	return n + " Temp HP as Bonus Action while Bloodied";
   })
   var infiltratorTxt = desc([
-	"+5 ft Speed; Gemlike node in fist/chest is a Simple Ranged weapon, Lightning Launcher",
-	"It gives me Advantage on Dexterity (Stealth) checks"
+	"+5 ft Speed; Gemlike node in fist/chest is a Simple Ranged weapon, Lightning Launcher.",
+	"It gives me Advantage on Dexterity (Stealth) checks."
   ])
   var prereqFunc = function(v) {
 	var sParsed = ParseArmor(v.choice.replace(/(Dreadnaught|Guardian|Infiltrator) arcane /i, ''));
