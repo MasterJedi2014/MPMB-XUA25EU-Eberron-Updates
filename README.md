@@ -22,6 +22,8 @@ This script will allow users to more easily playtest the revised Artificer & Ebe
   - V8 minor update to fix the "Force Strike" attacks within the "Homunculus Servant" `CreatureList` objects.
 - **2025-04-03:**
   - V8 minor update to correct an error casued by a missing comma.
+- **2025-04-04:**
+  - V8 minor update: Reworded the Armorer's Dreadnaught description & the base class' "Replicate Magic Item" feature (rewording provided by user Nod). User Nod also notified me that the "Magical Tinkering" class feature had its name changed to "Tinker's Magic"; As a result, the `AddFeatureChoice` option to bring back the 2019/2020 functions of the "Magical Tinkering" class feature was renamed to match the new name. Added the missing *Mending* cantrip to the "Tinker's Magic" class feature. Combined the 2 Bonus Actions of the "Magic Item Tinker" class feature into a single line to save on space.
 
 **Known Bugs:**
 - ~~V8: Homunculus Servants are not displaying their correct Attack & Damage Modifiers for their Force Strike attacks.~~
