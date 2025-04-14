@@ -24,11 +24,13 @@ This script will allow users to more easily playtest the revised Artificer & Ebe
   - V8 minor update to correct an error casued by a missing comma.
 - **2025-04-04:**
   - V8 minor update: Reworded the Armorer's Dreadnaught description & the base class' "Replicate Magic Item" feature (rewording provided by user Nod). User Nod also notified me that the "Magical Tinkering" class feature had its name changed to "Tinker's Magic"; As a result, the `AddFeatureChoice` option to bring back the 2019/2020 functions of the "Magical Tinkering" class feature was renamed to match the new name. Added the missing *Mending* cantrip to the "Tinker's Magic" class feature. Combined the 2 Bonus Actions of the "Magic Item Tinker" class feature into a single line to save on space.
+- **2025-04-14:**
+  - V8 superseded by V9. "Replicate Magic Item" code updated to fix all known issues related to the feature. Updated code at the end of the script to ensure that the "Replicate Magic Item" menus don't disappear upon a PDF save and reload. All credit for this update goes to user TrackAtNite.
 
 **Known Bugs:**
 - ~~V8: Homunculus Servants are not displaying their correct Attack & Damage Modifiers for their Force Strike attacks.~~
-- V8: +2 Armor, Shield, Wand of the War Mage, Weapon, & Wraps of Unarmed Power don't appear in their correct menus.
-- V8: The level 10 "Replicate Magic Item" options are being addd to the level 6 options immediately upon the character attaining level 6.
+- ~~V8: +2 Armor, Shield, Wand of the War Mage, Weapon, & Wraps of Unarmed Power don't appear in their correct menus.~~
+- ~~V8: The level 10 "Replicate Magic Item" options are being addd to the level 6 options immediately upon the character attaining level 6.~~
 
 **XUA24A Content Source:**
 - https://media.dndbeyond.com/compendium-images/ua/the-artificer/AzQEA72K8EMf9HmU/UA2024-Artificer.pdf
