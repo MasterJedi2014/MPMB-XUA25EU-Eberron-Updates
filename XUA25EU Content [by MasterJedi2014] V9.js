@@ -3240,13 +3240,11 @@ RunFunctionAtEnd(function () {
 // Delete the old Infuse Item feature, this is replaced with the Replicate Magic Item feature; Coded by TrackAtNite
 RunFunctionAtEnd(function() { 
 	// ! extraname is not defined in this script, meaning that the original artificer was added after this script, do not delete
-	if(ClassList.artificer.features["infuse item"] && !ClassList.artificer.features["infuse item"].extrachoices.extraname === "Artificer Infusion") {
-		delete ClassList.artificer.features["infuse item"]; // remove the infuse item feature
+	if(ClassList.artificer.features["infuse item"]) {
+		delete ClassList.artificer.features["infuse item"]; // delete then (re)add
+		AddArtificerMI(); // (persists with reload)
 	}
 	else {
-		// ! this is for compatability if the official script is added after this one.
-		// ! This can be removed since this means that the official 2014 artificer is the one being used by the sheet.
-		ClassList.artificer.features["infuse item"].minlevel = 1000; // set the minimum level to 1000 which effectively means that it will never appear til level 1000. 
-		AddArtificerMI(); // this means the feature was deleted and we can safely add the new feature (persists with reload).
+		AddArtificerMI(); // only add the items since the old feature is deleted already.
 	}
 })
