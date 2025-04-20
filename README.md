@@ -25,7 +25,9 @@ This script will allow users to more easily playtest the revised Artificer & Ebe
 - **2025-04-04:**
   - V8 minor update: Reworded the Armorer's Dreadnaught description & the base class' "Replicate Magic Item" feature (rewording provided by user Nod). User Nod also notified me that the "Magical Tinkering" class feature had its name changed to "Tinker's Magic"; As a result, the `AddFeatureChoice` option to bring back the 2019/2020 functions of the "Magical Tinkering" class feature was renamed to match the new name. Added the missing *Mending* cantrip to the "Tinker's Magic" class feature. Combined the 2 Bonus Actions of the "Magic Item Tinker" class feature into a single line to save on space.
 - **2025-04-14:**
-  - V8 superseded by V9. "Replicate Magic Item" code updated to fix all known issues related to the feature. Updated code at the end of the script to ensure that the "Replicate Magic Item" menus don't disappear upon a PDF save and reload. All credit for this update goes to user TrackAtNite.
+  - V8 superseded by V9. "Replicate Magic Item" code updated to fix most known issues related to the feature. Updated code at the end of the script to ensure that the "Replicate Magic Item" menus don't disappear upon a PDF save and reload. All credit for this update goes to user TrackAtNite.
+- **2025-04-20:**
+  - V9 superseded by V10. "Replicate Magic Item" code updated again to fix remaining known issues related to the feature. Cleaned up code at the end of the script to ensure that the "Replicate Magic Item" menus don't disappear upon a PDF save and reload. All credit for this update again goes to user TrackAtNite.
 
 **Known Bugs:**
 - ~~V8: Homunculus Servants are not displaying their correct Attack & Damage Modifiers for their Force Strike attacks.~~
