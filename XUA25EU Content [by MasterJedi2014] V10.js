@@ -3,7 +3,7 @@
 	Effect:		This script adds all of the content from the Unearthed Arcana 2025: Eberron Updates article.
 				This file has been made by MasterJedi2014, borrowing a lot of code from MorePurpleMoreBetter (Joost), Shroo, ThePokésimmer, TrackAtNite, and those who have contributed to the sheet's existing material.
 	Code by:	MasterJedi2014, using MorePurpleMoreBetter's code as reference; Shroo; ThePokésimmer; TrackAtNite
-	Date:		2025-04-20 (sheet v13.2.3)
+	Date:		2025-05-04 (sheet v13.2.3)
 	Notes:		This file will start by shunting the old Artificer and its subclasses into a "Legacy" class using code primarily developed by Shroo.
 				It will thereafter define the new UA Artificer, along with options to customize some class features to include certain aspects of the old Artificer class features, followed by the magic items as well as Feats relating to Dragonmarks.
 */
@@ -1440,7 +1440,7 @@ function AddArtificerMI() {
 }
 
 // Add "Homunculus Servant" Spell
-SpellsList["homunculus servant XUA25EU"] = {
+SpellsList["homunculus servant xua25eu"] = {
   name : "Homunculus Servant (XUA25EU)",
   source : [["XUA25EU", 12]],
   classes : ["artificer"],
@@ -1465,7 +1465,7 @@ SpellsList["dragon's breath"].classes = ["artificer", "sorcerer", "wizard"];
 SpellsList["circle of power"].classes = ["artificer", "cleric", "paladin", "wizard"];
 
 // Add "Homunculus Servant" companion template
-CompanionList.homunculusservant_XUA25EU = {
+CompanionList.homunculusservant_xua25eu = {
   name : "Homunculus Servant",
   nameMenu : "Homunculus Servant (Homunculus Servant XUA25EU spell)",
   nameTooltip : "the Homunculus Servant (XUA25EU) spell",
@@ -1491,7 +1491,7 @@ CompanionList.homunculusservant_XUA25EU = {
 };
 
 // Add "Homunculus Servant" creatures, one per level
-CreatureList["homunculus servant XUA25EU lvl 2"] = {
+CreatureList["homunculus servant xua25eu lvl 2"] = {
   name : "2nd-Lvl Homunculus Servant",
   source : [["XUA25EU", 13]],
   size : 5,
@@ -1559,7 +1559,7 @@ CreatureList["homunculus servant XUA25EU lvl 2"] = {
   }],
   header : "Construct",
 };
-CreatureList["homunculus servant XUA25EU lvl 3"] = {
+CreatureList["homunculus servant xua25eu lvl 3"] = {
   name : "3rd-Lvl Homunculus Servant",
   source : [["XUA25EU", 13]],
   size : 5,
@@ -1627,7 +1627,7 @@ CreatureList["homunculus servant XUA25EU lvl 3"] = {
   }],
   header : "Construct",
 };
-CreatureList["homunculus servant XUA25EU lvl 4"] = {
+CreatureList["homunculus servant xua25eu lvl 4"] = {
   name : "4th-Lvl Homunculus Servant",
   source : [["XUA25EU", 13]],
   size : 5,
@@ -1695,7 +1695,7 @@ CreatureList["homunculus servant XUA25EU lvl 4"] = {
   }],
   header : "Construct",
 };
-CreatureList["homunculus servant XUA25EU lvl 5"] = {
+CreatureList["homunculus servant xua25eu lvl 5"] = {
   name : "5th-Lvl Homunculus Servant",
   source : [["XUA25EU", 13]],
   size : 5,
@@ -1763,7 +1763,7 @@ CreatureList["homunculus servant XUA25EU lvl 5"] = {
   }],
   header : "Construct",
 };
-CreatureList["homunculus servant XUA25EU lvl 6"] = {
+CreatureList["homunculus servant xua25eu lvl 6"] = {
   name : "6th-Lvl Homunculus Servant",
   source : [["XUA25EU", 13]],
   size : 5,
@@ -1831,7 +1831,7 @@ CreatureList["homunculus servant XUA25EU lvl 6"] = {
   }],
   header : "Construct",
 };
-CreatureList["homunculus servant XUA25EU lvl 7"] = {
+CreatureList["homunculus servant xua25eu lvl 7"] = {
   name : "7th-Lvl Homunculus Servant",
   source : [["XUA25EU", 13]],
   size : 5,
@@ -1899,7 +1899,7 @@ CreatureList["homunculus servant XUA25EU lvl 7"] = {
   }],
   header : "Construct",
 };
-CreatureList["homunculus servant XUA25EU lvl 8"] = {
+CreatureList["homunculus servant xua25eu lvl 8"] = {
   name : "8th-Lvl Homunculus Servant",
   source : [["XUA25EU", 13]],
   size : 5,
@@ -1967,7 +1967,7 @@ CreatureList["homunculus servant XUA25EU lvl 8"] = {
   }],
   header : "Construct",
 };
-CreatureList["homunculus servant XUA25EU lvl 9"] = {
+CreatureList["homunculus servant xua25eu lvl 9"] = {
   name : "9th-Lvl Homunculus Servant",
   source : [["XUA25EU", 13]],
   size : 5,
