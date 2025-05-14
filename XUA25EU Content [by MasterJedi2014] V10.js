@@ -3,7 +3,7 @@
 	Effect:		This script adds all of the content from the Unearthed Arcana 2025: Eberron Updates article.
 				This file has been made by MasterJedi2014, borrowing a lot of code from MorePurpleMoreBetter (Joost), Shroo, ThePokésimmer, TrackAtNite, and those who have contributed to the sheet's existing material.
 	Code by:	MasterJedi2014, using MorePurpleMoreBetter's code as reference; Shroo; ThePokésimmer; TrackAtNite
-	Date:		2025-05-04 (sheet v13.2.3)
+	Date:		2025-05-14 (sheet v13.2.3)
 	Notes:		This file will start by shunting the old Artificer and its subclasses into a "Legacy" class using code primarily developed by Shroo.
 				It will thereafter define the new UA Artificer, along with options to customize some class features to include certain aspects of the old Artificer class features, followed by the magic items as well as Feats relating to Dragonmarks.
 */
@@ -152,7 +152,7 @@ legacyClassRefactor("artificer", {
   spellcastingKnown: {
     cantrips: [2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4],
     spells: "list",
-    prepared: true,
+    prepared: [2, 3, 4, 5, 6, 6, 7, 7, 9, 9, 10, 10, 11, 11, 12, 12, 14, 14, 15, 15],
   },
   features: {
 	"spellcasting": {
