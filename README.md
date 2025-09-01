@@ -32,11 +32,14 @@ This script will allow users to more easily playtest the revised Artificer & Ebe
   - V10 minor update: Update to fix error that was preventing the *Homunculus Servant* spell from properly appearing in the spell list.
 - **2025-05-14:**
   - V10 minor update: Update to fix error regarding number of prepared spells at a given class level.
+- **2025-09-01:**
+  - V10 minor update: Update to fix error regarding Attack & Damage modifiers for the Steel Defender.
 
 **Known Bugs:**
 - ~~V8: Homunculus Servants are not displaying their correct Attack & Damage Modifiers for their Force Strike attacks.~~
 - ~~V8: +2 Armor, Shield, Wand of the War Mage, Weapon, & Wraps of Unarmed Power don't appear in their correct menus.~~
 - ~~V8: The level 10 "Replicate Magic Item" options are being addd to the level 6 options immediately upon the character attaining level 6.~~
+- ~~V10: Steel Defender Attack & Damage modifiers are using incorrect values.~~
 
 **XUA24A Content Source:**
 - https://media.dndbeyond.com/compendium-images/ua/the-artificer/AzQEA72K8EMf9HmU/UA2024-Artificer.pdf
